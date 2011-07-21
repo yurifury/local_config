@@ -21,8 +21,9 @@ export ZSH_THEME="miloshadzic"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git brew autojump osx svn)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
