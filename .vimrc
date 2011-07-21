@@ -6,6 +6,9 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'tomasr/molokai'
+Bundle 'fholgado/minibufexpl.vim'
+
 filetype plugin indent on
 set hidden
 set history=1000
@@ -36,4 +39,27 @@ set t_vb=
 set cursorline
 
 nmap <leader><leader> <C-^>
+
+" Theming
+set background=dark
+colorscheme molokai
+set relativenumber
+set colorcolumn=80
+highlight! link ColorColumn CursorLine
+
+set guioptions-=m
+set guioptions-=T
+set guioptions-=R
+set guioptions-=r
+set guioptions-=L
+set guioptions-=l
+set guifont=Inconsolata:h14
+
+nmap <tab> :MiniBufExplorer<CR>
+let g:miniBufExplSplitBelow=1
+let g:miniBufExplVSplit = 20
+let g:miniBufExplSplitToEdge = 1
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplCloseOnSelect = 1
+let g:miniBufExplCheckDupeBufs = 0
 
