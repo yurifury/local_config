@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tomasr/molokai'
 Bundle 'fholgado/minibufexpl.vim'
+Bundle 'YankRing.vim'
 
 filetype plugin indent on
 set hidden
@@ -63,3 +64,4 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplCloseOnSelect = 1
 let g:miniBufExplCheckDupeBufs = 0
 
+let g:yankring_history_file = '.yankring'
