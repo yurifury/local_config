@@ -26,4 +26,4 @@ plugins=(git brew autojump osx svn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
+alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
