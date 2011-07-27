@@ -9,6 +9,11 @@ Bundle 'gmarik/vundle'
 Bundle 'tomasr/molokai'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'YankRing.vim'
+Bundle 'Lokaltog/vim-easymotion'
+
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'JavaScript-Indent'
+Bundle 'jmcantrell/ack.vim'
 
 filetype plugin indent on
 set hidden
@@ -27,11 +32,12 @@ set smartcase
 set showcmd
 set showmatch
 
-set list
+"set list
 set listchars=trail:›
 
 set ts=2 sw=2
 set autoindent
+set smartindent
 
 set noerrorbells
 set novisualbell
@@ -58,10 +64,15 @@ set guifont=Inconsolata:h14
 
 nmap <tab> :MiniBufExplorer<CR>
 let g:miniBufExplSplitBelow=1
-let g:miniBufExplVSplit = 20
+let g:miniBufExplVSplit = 40
 let g:miniBufExplSplitToEdge = 1
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplCloseOnSelect = 1
 let g:miniBufExplCheckDupeBufs = 0
+let g:miniBufExplSortBy = 'mru'
 
 let g:yankring_history_file = '.yankring'
+
+let g:EasyMotion_leader_key = '<Leader>]'
+
+map <C-S-C> <plug>NERDCommenterToggle<CR>k
