@@ -28,3 +28,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 export PATH=~/bin:$PATH
+
+export PROMPT=$PROMPT\ 
