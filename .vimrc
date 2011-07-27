@@ -27,7 +27,7 @@ set smartcase
 set showcmd
 set showmatch
 
-set list
+"set list
 set listchars=trail:›
 
 set ts=2 sw=2
