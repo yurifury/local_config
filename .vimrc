@@ -16,7 +16,7 @@ Bundle 'JavaScript-Indent'
 Bundle 'jmcantrell/ack.vim'
 Bundle 'neh/gundo.vim'
 
-filetype plugin indent on
+filetype plugin on
 set hidden
 set history=1000
 set nobackup
