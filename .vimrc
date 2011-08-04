@@ -21,6 +21,7 @@ set hidden
 set history=1000
 set nobackup
 set noswapfile
+set autoread
 syntax on
 set backspace=2
 
@@ -52,8 +53,8 @@ nmap <leader><leader> <C-^>
 set background=dark
 colorscheme molokai
 set relativenumber
-set colorcolumn=80
-highlight! link ColorColumn CursorLine
+"set colorcolumn=80
+"highlight! link ColorColumn CursorLine
 
 set guioptions-=m
 set guioptions-=T
