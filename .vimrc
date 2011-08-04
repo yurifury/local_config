@@ -14,6 +14,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'JavaScript-Indent'
 Bundle 'jmcantrell/ack.vim'
+Bundle 'neh/gundo.vim'
 
 filetype plugin indent on
 set hidden
