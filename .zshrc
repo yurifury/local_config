@@ -21,7 +21,7 @@ export ZSH_THEME="miloshadzic"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew autojump osx svn)
+plugins=(git brew osx svn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -30,3 +30,10 @@ alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 export PATH=~/bin:/usr/local/bin:$PATH
 
 export PROMPT=$PROMPT\ 
+
+. `brew --prefix`/etc/profile.d/z.sh
+function precmd () {
+	z --add "$(pwd -P)"
+}
+
+#alias git=hub
